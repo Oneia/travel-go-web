@@ -1,0 +1,51 @@
+.c-category-list {
+  .no-wrap {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  .button-two span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button-two span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button-two:hover span {
+    padding-right: 25px;
+  }
+
+  .button-two:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .sub-main{
+    width: 200px;
+    background: khaki;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .button-two{
+    cursor: pointer;
+    font-size:24px;
+  }
+  .create-new {
+    text-align: center;
+    font-size: 20px;
+  }
+}

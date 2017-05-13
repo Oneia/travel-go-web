@@ -1,0 +1,16 @@
+<div class="c-category-item-list">
+  <md-list>
+    <md-list-item *ngFor="let place of places" (click)="goToItem(place)">
+      <img md-list-avatar src={{place.img}} alt="...">
+      <h3 md-line> {{place.title}} </h3>
+      <p md-line>
+          {{place.description}}
+      </p>
+      <p md-line>
+        <a>category</a>
+        <a>category</a>
+      </p>
+      <p md-line class="align-right"><a>show at map</a> </p>
+    </md-list-item>
+  </md-list>
+</div>

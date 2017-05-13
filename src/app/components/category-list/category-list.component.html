@@ -1,0 +1,22 @@
+<div class="c-category-list">
+  <md-list>
+    <md-list-item *ngFor="let category of categories">
+      <img md-list-avatar src={{category.img}} alt="...">
+      <h3 md-line> {{category.title}} </h3>
+      <p md-line class="no-wrap" routerLink="/places">
+        {{category.desc}}
+      </p>
+      <p md-line class="align-right">
+        <a>Show at map</a>
+      </p>
+    </md-list-item>
+  </md-list>
+  <div class="create-new">
+    <p>
+      You can create your own route or quest. Press create!
+    </p>
+    <div class="sub-main">
+      <a class="button-two"><span>Create new</span></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="c-category-item">
+  <ng-container *ngIf="item">
+    <h2 class="align-center">
+      {{item.title}}
+    </h2>
+    <div class="content">
+      <img src={{item.img}}>
+      <div [innerHTML]="item.content"></div>
+      <!--<div class="item-footer"><strong>Расстояние - {{item.distance}} метров.</strong> <a (click)="goToItemAtMap(item.lat, item.lng)">Перейти к маркеру</a></div>-->
+    </div>
+  </ng-container>
+</div>
