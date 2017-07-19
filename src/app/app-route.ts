@@ -7,6 +7,7 @@ import { MapComponent } from './components/map/map.component';
 import { CategoryItemListComponent } from './components/category-item-list/category-item-list.component';
 import { CategoryListComponent }     from './components/category-list/category-list.component';
 import { CategoryItemComponent } from './components/category-item/category-item.component';
+import { CategoryAddComponent } from './components/category-add/category-add.component';
 
 const ROUTES: Routes = [
   {
@@ -28,6 +29,10 @@ const ROUTES: Routes = [
   {
     path: 'categories',
     component: CategoryListComponent
+  },
+  {
+    path: 'categories/add',
+    component: CategoryAddComponent
   },
   // {
   //   path: 'groups',
